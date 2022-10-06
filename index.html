@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Artificial Intelligence</title>
+  <meta property="og:site_name" content="Artificial Intelligence">
+  <meta property="og:title" content="Artificial Intelligence" >
+  <meta property="og:type" content="article">
+  <link rel="icon" type="image/png" href="img/logo.svg"> 
+  <meta property="og:image" content="https://sitename.ru/img/prev.jpg">
+  <meta property="og:type" content="article">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/> -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+      <!--? Preloader Start -->
+      <div class="preloader" id="preloader">
+        <div class="preloader__ring"></div>
+        <span class="preloader-text">
+          loading...
+        </span>
+    </div>
+    <!-- Preloader Start -->
+
+    <!-- Modal-Window Start -->
+  <div class="modal-window">
+    <div class="ovedrlow"></div>
+  </div>
+    <!-- Modal-Window End -->
+
+
+    <nav class="menu menu-slide">
+      <ul class="menu__list">
+        <li class="menu__item">
+          <a href="">Home</a>
+        </li>
+        <li class="menu__item">
+          <a href="">About</a>
+        </li>
+        <li class="menu__item">
+          <a href="">Services</a>
+        </li>
+        <li class="menu__item">
+          <a href="">Blog</a>
+        </li>
+        <li class="menu__item"
+        ><a href="">Contact</a>
+      </li>
+      </ul>
+    </nav>
+
+
+  <!-- Header Start -->
+  <header class="header" id="header">
+    <div class="container">
+      <div class="navigation">
+        <div class="logo">
+          <a href="#" class="logo__btn">
+            <!-- <img src="img/logo.svg" alt=""> -->
+            <svg class="kok" width="45" height="59" viewBox="0 0 45 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M22.5002 5.98189C22.2033 5.98189 21.9167 5.93661 21.647 5.85266V9.91937H23.3533V5.85266C23.0836 5.93673 22.7971 5.98189 22.5002 5.98189Z" fill="#135693"/>
+              <g opacity="0.15">
+              <path opacity="0.15" d="M22.0267 3.10583C22.0267 1.90402 22.7359 0.868286 23.7587 0.392908C23.3759 0.21511 22.9498 0.115234 22.5 0.115234C20.8483 0.115234 19.5094 1.45423 19.5094 3.10583C19.5094 4.75742 20.8483 6.0963 22.5 6.0963C22.9498 6.0963 23.3759 5.99643 23.7587 5.81863C22.7359 5.34337 22.0267 4.30764 22.0267 3.10583Z" fill="#440075"/>
+              </g>
+              <path d="M41.562 14.5879H39.7985V30.8568H41.562C42.5288 30.8568 43.3199 30.0658 43.3199 29.099V16.3456C43.3199 15.3789 42.5288 14.5879 41.562 14.5879Z" fill="#9EA7AF"/>
+              <path d="M5.20129 14.5876H3.32139C2.35459 14.5876 1.56366 15.3787 1.56366 16.3454V29.0987C1.56366 30.0655 2.35459 30.8564 3.32139 30.8564H5.20117L5.20129 14.5876Z" fill="#9EA7AF"/>
+              <path d="M6.4 52.1416H3.98432C3.1596 52.1416 2.39347 51.891 1.75781 51.4618V57.1859C1.75781 57.8304 2.28518 58.3578 2.92971 58.3578H6.4V52.1416Z" fill="#C5CCD3"/>
+              <path d="M41.0155 52.1411H38.5999V58.3574H42.0702C42.7148 58.3574 43.2421 57.8301 43.2421 57.1855V51.4615C42.6064 51.8905 41.8402 52.1411 41.0155 52.1411Z" fill="#C5CCD3"/>
+              <path opacity="0.15" d="M4.21877 57.1858V52.1413H3.98432C3.1596 52.1413 2.39347 51.8907 1.75781 51.4615V57.1856C1.75781 57.8302 2.28518 58.3575 2.92971 58.3575H5.39066C4.74613 58.3577 4.21877 57.8303 4.21877 57.1858Z" fill="#440075"/>
+              <path d="M6.40003 43.1824H3.98435C1.78389 43.1824 0 44.9663 0 47.1667V48.3386C0 50.5391 1.784 52.3228 3.98435 52.3228H6.39991L6.40003 43.1824Z" fill="#E6E9ED"/>
+              <path d="M41.0155 43.1816H38.5999V52.3222H41.0155C43.2161 52.3222 44.9999 50.5383 44.9999 48.338V47.1661C44.9999 44.9654 43.216 43.1816 41.0155 43.1816Z" fill="#E6E9ED"/>
+              <g opacity="0.15">
+              <path opacity="0.15" d="M2.81257 48.338V47.1661C2.81257 44.9655 4.59646 43.1818 6.79691 43.1818H3.98435C1.78389 43.1818 0 44.9657 0 47.1661V48.338C0 50.5385 1.784 52.3222 3.98435 52.3222H6.79691C4.59634 52.3222 2.81257 50.5385 2.81257 48.338Z" fill="#440075"/>
+              </g>
+              <path d="M26.3902 35.3853H18.6106V38.2924H26.3902V35.3853Z" fill="#9EA7AF"/>
+              <path opacity="0.15" d="M21.4455 35.3853H18.6106V38.2924H21.4455V35.3853Z" fill="#440075"/>
+              <path d="M31.651 41.0662V39.175C31.651 38.6192 31.1963 38.1644 30.6405 38.1644H14.0182C13.4622 38.1644 13.0074 38.6192 13.0074 39.175V41.0662H31.651Z" fill="#C5CCD3"/>
+              <path opacity="0.15" d="M16.5123 41.0662V39.175C16.5123 38.6192 16.9671 38.1644 17.5231 38.1644H14.0182C13.4622 38.1644 13.0074 38.6192 13.0074 39.175V41.0662H16.5123Z" fill="#440075"/>
+              <path d="M36.9556 40.8676H8.04385C7.07706 40.8676 6.28601 41.6586 6.28601 42.6254V58.3578H38.7134V42.6254C38.7134 41.6586 37.9225 40.8676 36.9556 40.8676Z" fill="#9EA7AF"/>
+              <g opacity="0.15">
+              <path opacity="0.15" d="M11.4004 40.8676H8.04385C7.07706 40.8676 6.28601 41.6586 6.28601 42.6254V58.3578H9.64255V42.6254C9.64255 41.6586 10.4336 40.8676 11.4004 40.8676Z" fill="#440075"/>
+              </g>
+              <path d="M39.9122 33.7616C39.9122 34.7284 39.1212 35.5193 38.1545 35.5193H6.84507C5.87839 35.5193 5.08734 34.7284 5.08734 33.7616V11.5635C5.08734 10.5967 5.87839 9.80579 6.84507 9.80579H38.1545C39.1212 9.80579 39.9122 10.5967 39.9122 11.5635V33.7616Z" fill="#C5CCD3"/>
+              <g opacity="0.15">
+              <path opacity="0.15" d="M8.43728 33.7616V11.5635C8.43728 10.5967 9.22833 9.80579 10.1951 9.80579H6.84507C5.87839 9.80579 5.08734 10.5967 5.08734 11.5635V33.7617C5.08734 34.7285 5.87839 35.5194 6.84507 35.5194H10.1951C9.22833 35.5193 8.43728 34.7284 8.43728 33.7616Z" fill="#440075"/>
+              </g>
+              <path d="M35.7526 22.6954C35.7526 26.0488 33.0342 28.7667 29.6811 28.7667H15.3186C11.9653 28.7667 9.24701 26.0487 9.24701 22.6954C9.24701 19.3422 11.9653 16.6241 15.3186 16.6241H29.6811C33.0342 16.6241 35.7526 19.3422 35.7526 22.6954Z" fill="#135693"/>
+              <g opacity="0.15">
+              <path opacity="0.15" d="M12.6561 22.6954C12.6561 19.3422 15.3744 16.6241 18.7277 16.6241H15.3186C11.9653 16.6241 9.24701 19.3423 9.24701 22.6954C9.24701 26.0488 11.9653 28.7667 15.3186 28.7667H18.7277C15.3744 28.7667 12.6561 26.0487 12.6561 22.6954Z" fill="#440075"/>
+              </g>
+              <!-- <path d="M14.7123 25.0682C16.0162 25.0682 17.0731 24.0071 17.0731 22.6981C17.0731 21.389 16.0162 20.3279 14.7123 20.3279C13.4084 20.3279 12.3514 21.389 12.3514 22.6981C12.3514 24.0071 13.4084 25.0682 14.7123 25.0682Z" fill="#6BC1DD"/> -->
+              <!-- <path d="M30.3331 25.0669C31.637 25.0669 32.694 24.0057 32.694 22.6967C32.694 21.3877 31.637 20.3265 30.3331 20.3265C29.0292 20.3265 27.9723 21.3877 27.9723 22.6967C27.9723 24.0057 29.0292 25.0669 30.3331 25.0669Z" fill="#6BC1DD"/> -->
+              <path d="M32.9737 58.3568V48.1405C32.9737 47.496 32.4463 46.9686 31.8018 46.9686H13.1984C12.5539 46.9686 12.0266 47.496 12.0266 48.1405V58.3568H32.9737Z" fill="#135693"/>
+              <path d="M24.6093 58.3567V55.0617C24.6093 54.8683 24.4511 54.7101 24.2578 54.7101H20.7421C20.5489 54.7101 20.3906 54.8683 20.3906 55.0617V58.3567H24.6093Z" fill="#FFC502"/>
+              <path d="M17.578 50.6367H14.8828C14.4115 50.6367 14.0296 50.2549 14.0296 49.7836C14.0296 49.3123 14.4115 48.9304 14.8828 48.9304H17.578C18.0493 48.9304 18.4312 49.3123 18.4312 49.7836C18.4312 50.2547 18.0493 50.6367 17.578 50.6367Z" fill="#C5CCD3"/>
+              <path d="M16.4063 52.718H14.8828C14.4115 52.718 14.0297 52.3362 14.0297 51.8649C14.0297 51.3936 14.4115 51.0117 14.8828 51.0117H16.4063C16.8776 51.0117 17.2595 51.3936 17.2595 51.8649C17.2595 52.3362 16.8775 52.718 16.4063 52.718Z" fill="#C5CCD3"/>
+              <path d="M17.5781 54.8024H14.8828C14.4115 54.8024 14.0297 54.4204 14.0297 53.9492C14.0297 53.4779 14.4115 53.0961 14.8828 53.0961H17.5781C18.0494 53.0961 18.4313 53.4779 18.4313 53.9492C18.4313 54.4205 18.0494 54.8024 17.5781 54.8024Z" fill="#C5CCD3"/>
+              <path d="M16.0547 56.884H14.8828C14.4115 56.884 14.0297 56.5022 14.0297 56.0309C14.0297 55.5597 14.4115 55.1777 14.8828 55.1777H16.0547C16.526 55.1777 16.9079 55.5597 16.9079 56.0309C16.9079 56.5022 16.5259 56.884 16.0547 56.884Z" fill="#C5CCD3"/>
+              <path d="M29.7301 56.0281H27.6498C27.1562 56.0281 26.7562 55.6281 26.7562 55.1344C26.7562 54.6407 27.1563 54.2407 27.6498 54.2407H29.7301C30.2237 54.2407 30.6239 54.6408 30.6239 55.1344C30.6239 55.6282 30.2237 56.0281 29.7301 56.0281Z" fill="#E6E9ED"/>
+              <path d="M28.6906 52.9309C29.7272 52.9309 30.5675 52.0905 30.5675 51.0539C30.5675 50.0173 29.7272 49.177 28.6906 49.177C27.654 49.177 26.8137 50.0173 26.8137 51.0539C26.8137 52.0905 27.654 52.9309 28.6906 52.9309Z" fill="#5DC647"/>
+              <path d="M24.6615 52.0366C24.6615 52.2348 24.4994 52.3968 24.3013 52.3968H20.699C20.5009 52.3968 20.3388 52.2348 20.3388 52.0366V50.0728C20.3388 49.8746 20.5009 49.7125 20.699 49.7125H24.3013C24.4994 49.7125 24.6615 49.8746 24.6615 50.0728V52.0366Z" fill="#6BC1DD"/>
+            </svg>
+            <svg class="antenna" width="45" height="59" viewBox="0 0 45 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path class="pop1" d="M22.5 6.09642C24.1517 6.09642 25.4906 4.75749 25.4906 3.10583C25.4906 1.45417 24.1517 0.115234 22.5 0.115234C20.8484 0.115234 19.5094 1.45417 19.5094 3.10583C19.5094 4.75749 20.8484 6.09642 22.5 6.09642Z" fill="#6BC1DD"/>
+            </svg>
+            <div class="eyes">
+              <span></span>
+              <span></span>
+            </div>
+          </a>
+          <span class="logo__name">
+            Artificial Intelligence
+          </span>
+        </div>
+        <button type="button" class="mobile-menu">
+          <svg width="30" height="30" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2.83929 5.89203H45.1608" stroke="#3a68b8" stroke-width="3.42857" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M2.83929 23.0349H45.1608" stroke="#3a68b8" stroke-width="3.42857" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M2.83929 40.1777H45.1608" stroke="#3a68b8" stroke-width="3.42857" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a href="">Home</a>
+            </li>
+            <li class="menu__item">
+              <a href="">About</a>
+            </li>
+            <li class="menu__item">
+              <a href="">Services</a>
+            </li>
+            <li class="menu__item">
+              <a href="">Blog</a>
+            </li>
+            <li class="menu__item"
+            ><a href="">Contact</a>
+          </li>
+          </ul>
+        </nav>
+        <button type="button" class="btn btn-blue singup-btn">
+          Sign In
+        </button>
+      </div>
+    </div>
+  </header>
+  <!-- Header End -->
+
+
+
+
+  <!-- Offer Start-->
+  <section class="offer" id="offer">
+    <div class="container">
+
+      <div class="offer-content">
+        <span class="offer-content__span">
+          Next genaretion platform
+        </span>
+        <h1 class="offer-content__title">
+          Artificial intelligence & Syber security
+        </h1>
+        <p class="offer-content__text">
+          Lorem ipsum is placeholder text commonly used in the graphic, print, 
+          and publishing industries for previewing layouts and visual mockups.
+        </p>
+        <div class="wrap-btns">
+          <a href="" class="btn-blue">Get Started</a>
+          <a href="" class="btn-blue btn-blue_play">
+            Watch Video
+          </a>
+        </div>
+      </div>
+        <div class="logos-wrap">
+          <a href="#" class="logos-wrap__btn">
+            <img src="img/logo1.svg" alt="">
+          </a>
+          <a href="#" class="logos-wrap__btn">
+            <img src="img/logo2.svg" alt="">
+          </a>
+          <a href="#" class="logos-wrap__btn">
+            <img src="img/logo3.svg" alt="">
+          </a>
+          <a href="#" class="logos-wrap__btn">
+            <img src="img/logo4.svg" alt="">
+          </a>
+        </div> 
+        <div class="dots">
+          <span class="dots__dot1 dots__speed"></span>
+          <span class="dots__dot2 dots__speed"></span>
+          <span class="dots__dot3 dots__speed"></span>
+          <span class="dots__dot4 dots__speed"></span>
+          <span class="dots__dot5 dots__speed"></span>
+          <span class="dots__dot6 dots__speed"></span>
+          <span class="dots__dot7 dots__speed"></span>
+          <span class="dots__dot8 dots__speed"></span>
+          <span class="dots__dot9 dots__speed"></span>
+          <span class="dots__dot10 dots__speed"></span>
+        </div>     
+    </div>
+      
+    
+  </section>
+    <!-- Offer End -->
+
+  <!-- Intelligence Start-->
+  <section class="intelligence" id="intelligence">
+    <div class="container">
+      <div class="intellengece-content">
+        <h2 class="section-title">
+          Apply AI, Deep Learning and Data Sciece to solve
+        </h2>
+        <p class="intellengece-content-text">
+          Lorem ipsum is placeholder text commonly used in the graphic, print, 
+          and publishing industries for previewing layouts and visual mockups.
+        </p>
+        <a href="#" class="intellengece-content__btn btn-blue">
+          Learn More
+        </a>
+      </div>
+      <div class="ball-light">
+        <span></span>
+        <!-- <span></span>
+        <span></span>
+        <span></span> -->
+      </div>
+    </div>
+    <span class="intelligence-light"></span>
+    
+  </section>
+   <!-- Intelligence End-->
+
+   <!-- Slider Start -->
+   <section class="slider" id="slider">
+    <div class="cards-wrap swiper">
+      <div class="swiper-wrapper">
+        <div class="card swiper-slide">
+          <img src="img/card1.svg" alt="" class="card__img">
+          <h3 class="card__title">
+            Naxly as the Winners in Global Agency Awards
+          </h3>
+          <p class="card__text">
+            Lorem ipsum is placeholder text commonly used in print, 
+            and publishing industries for previewing layouts and visual mockups.
+          </p>
+        </div>
+        <div class="card swiper-slide">
+          <img src="img/card2.svg" alt="" class="card__img">
+          <h3 class="card__title">
+            Expert Prespective Agency Awards
+          </h3>
+          <p class="card__text">
+            Lorem ipsum is placeholder text commonly used in print, 
+            and publishing industries for previewing layouts and visual mockups.
+          </p>
+        </div>
+        <div class="card swiper-slide">
+          <img src="img/card3.svg" alt="" class="card__img">
+          <h3 class="card__title">
+            Business Prespective Global Agency Awards
+          </h3>
+          <p class="card__text">
+            Lorem ipsum is placeholder text commonly used in print, 
+            and publishing industries for previewing layouts and visual mockups.
+          </p>
+        </div>
+        <div class="card swiper-slide">
+          <img src="img/card4.svg" alt="" class="card__img">
+          <h3 class="card__title">
+            Value for Results in Global Agency Awards
+          </h3>
+          <p class="card__text">
+            Lorem ipsum is placeholder text commonly used in print, 
+            and publishing industries for previewing layouts and visual mockups.
+          </p>
+        </div>
+        <div class="card swiper-slide">
+          <img src="img/card5.svg" alt="" class="card__img">
+          <h3 class="card__title">
+            Global Experience in Agency Awards
+          </h3>
+          <p class="card__text">
+            Lorem ipsum is placeholder text commonly used in print, 
+            and publishing industries for previewing layouts and visual mockups.
+          </p>
+        </div>
+      </div>
+    </div>
+   </section>
+   <!-- Slider End-->
+
+   <!-- Review Start -->
+   <section class="review" id="review">
+    <div class="container">
+      <div class="review-content">
+        <h2 class="section-title">
+          What our clients say about our awesome solutions
+        </h2>
+        <div class="text-wrap">
+          <p class="text-wrap__text">
+            To take a trivial example, which of us ever undertakes laborious 
+            physical exercise, except to obtain some advantage from it who do 
+            not know.
+          </p>
+          <p class="text-wrap__text">
+            Lorem ipsum is placeholder text commonly used in the graphic, print, 
+            and publishing .
+          </p>
+          <p class="text-wrap__text">
+            Lorem ipsum is placeholder previewing layouts and visual mockups.
+          </p>
+          <p class="text-wrap__text">
+            Lorem ipsum is placeholder text commonly used in the graphic, print, 
+            and publishing industries for previewing layouts and visual mockups.
+          </p>
+        </div>
+      </div>
+    </div>
+    <span class="review-light"></span>
+   </section>
+   <!-- Review End -->
+
+   <!-- Footer Statrs -->
+   <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-wrap">
+        <div class="first-colunm">
+          <div class="logo logo_footer">
+            <a href="#" class="logo__btn">
+              <!-- <img src="img/logo.svg" alt=""> -->
+              <svg class="kok" width="45" height="59" viewBox="0 0 45 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M22.5002 5.98189C22.2033 5.98189 21.9167 5.93661 21.647 5.85266V9.91937H23.3533V5.85266C23.0836 5.93673 22.7971 5.98189 22.5002 5.98189Z" fill="#135693"/>
+                <g opacity="0.15">
+                <path opacity="0.15" d="M22.0267 3.10583C22.0267 1.90402 22.7359 0.868286 23.7587 0.392908C23.3759 0.21511 22.9498 0.115234 22.5 0.115234C20.8483 0.115234 19.5094 1.45423 19.5094 3.10583C19.5094 4.75742 20.8483 6.0963 22.5 6.0963C22.9498 6.0963 23.3759 5.99643 23.7587 5.81863C22.7359 5.34337 22.0267 4.30764 22.0267 3.10583Z" fill="#440075"/>
+                </g>
+                <path d="M41.562 14.5879H39.7985V30.8568H41.562C42.5288 30.8568 43.3199 30.0658 43.3199 29.099V16.3456C43.3199 15.3789 42.5288 14.5879 41.562 14.5879Z" fill="#9EA7AF"/>
+                <path d="M5.20129 14.5876H3.32139C2.35459 14.5876 1.56366 15.3787 1.56366 16.3454V29.0987C1.56366 30.0655 2.35459 30.8564 3.32139 30.8564H5.20117L5.20129 14.5876Z" fill="#9EA7AF"/>
+                <path d="M6.4 52.1416H3.98432C3.1596 52.1416 2.39347 51.891 1.75781 51.4618V57.1859C1.75781 57.8304 2.28518 58.3578 2.92971 58.3578H6.4V52.1416Z" fill="#C5CCD3"/>
+                <path d="M41.0155 52.1411H38.5999V58.3574H42.0702C42.7148 58.3574 43.2421 57.8301 43.2421 57.1855V51.4615C42.6064 51.8905 41.8402 52.1411 41.0155 52.1411Z" fill="#C5CCD3"/>
+                <path opacity="0.15" d="M4.21877 57.1858V52.1413H3.98432C3.1596 52.1413 2.39347 51.8907 1.75781 51.4615V57.1856C1.75781 57.8302 2.28518 58.3575 2.92971 58.3575H5.39066C4.74613 58.3577 4.21877 57.8303 4.21877 57.1858Z" fill="#440075"/>
+                <path d="M6.40003 43.1824H3.98435C1.78389 43.1824 0 44.9663 0 47.1667V48.3386C0 50.5391 1.784 52.3228 3.98435 52.3228H6.39991L6.40003 43.1824Z" fill="#E6E9ED"/>
+                <path d="M41.0155 43.1816H38.5999V52.3222H41.0155C43.2161 52.3222 44.9999 50.5383 44.9999 48.338V47.1661C44.9999 44.9654 43.216 43.1816 41.0155 43.1816Z" fill="#E6E9ED"/>
+                <g opacity="0.15">
+                <path opacity="0.15" d="M2.81257 48.338V47.1661C2.81257 44.9655 4.59646 43.1818 6.79691 43.1818H3.98435C1.78389 43.1818 0 44.9657 0 47.1661V48.338C0 50.5385 1.784 52.3222 3.98435 52.3222H6.79691C4.59634 52.3222 2.81257 50.5385 2.81257 48.338Z" fill="#440075"/>
+                </g>
+                <path d="M26.3902 35.3853H18.6106V38.2924H26.3902V35.3853Z" fill="#9EA7AF"/>
+                <path opacity="0.15" d="M21.4455 35.3853H18.6106V38.2924H21.4455V35.3853Z" fill="#440075"/>
+                <path d="M31.651 41.0662V39.175C31.651 38.6192 31.1963 38.1644 30.6405 38.1644H14.0182C13.4622 38.1644 13.0074 38.6192 13.0074 39.175V41.0662H31.651Z" fill="#C5CCD3"/>
+                <path opacity="0.15" d="M16.5123 41.0662V39.175C16.5123 38.6192 16.9671 38.1644 17.5231 38.1644H14.0182C13.4622 38.1644 13.0074 38.6192 13.0074 39.175V41.0662H16.5123Z" fill="#440075"/>
+                <path d="M36.9556 40.8676H8.04385C7.07706 40.8676 6.28601 41.6586 6.28601 42.6254V58.3578H38.7134V42.6254C38.7134 41.6586 37.9225 40.8676 36.9556 40.8676Z" fill="#9EA7AF"/>
+                <g opacity="0.15">
+                <path opacity="0.15" d="M11.4004 40.8676H8.04385C7.07706 40.8676 6.28601 41.6586 6.28601 42.6254V58.3578H9.64255V42.6254C9.64255 41.6586 10.4336 40.8676 11.4004 40.8676Z" fill="#440075"/>
+                </g>
+                <path d="M39.9122 33.7616C39.9122 34.7284 39.1212 35.5193 38.1545 35.5193H6.84507C5.87839 35.5193 5.08734 34.7284 5.08734 33.7616V11.5635C5.08734 10.5967 5.87839 9.80579 6.84507 9.80579H38.1545C39.1212 9.80579 39.9122 10.5967 39.9122 11.5635V33.7616Z" fill="#C5CCD3"/>
+                <g opacity="0.15">
+                <path opacity="0.15" d="M8.43728 33.7616V11.5635C8.43728 10.5967 9.22833 9.80579 10.1951 9.80579H6.84507C5.87839 9.80579 5.08734 10.5967 5.08734 11.5635V33.7617C5.08734 34.7285 5.87839 35.5194 6.84507 35.5194H10.1951C9.22833 35.5193 8.43728 34.7284 8.43728 33.7616Z" fill="#440075"/>
+                </g>
+                <path d="M35.7526 22.6954C35.7526 26.0488 33.0342 28.7667 29.6811 28.7667H15.3186C11.9653 28.7667 9.24701 26.0487 9.24701 22.6954C9.24701 19.3422 11.9653 16.6241 15.3186 16.6241H29.6811C33.0342 16.6241 35.7526 19.3422 35.7526 22.6954Z" fill="#135693"/>
+                <g opacity="0.15">
+                <path opacity="0.15" d="M12.6561 22.6954C12.6561 19.3422 15.3744 16.6241 18.7277 16.6241H15.3186C11.9653 16.6241 9.24701 19.3423 9.24701 22.6954C9.24701 26.0488 11.9653 28.7667 15.3186 28.7667H18.7277C15.3744 28.7667 12.6561 26.0487 12.6561 22.6954Z" fill="#440075"/>
+                </g>
+                <!-- <path d="M14.7123 25.0682C16.0162 25.0682 17.0731 24.0071 17.0731 22.6981C17.0731 21.389 16.0162 20.3279 14.7123 20.3279C13.4084 20.3279 12.3514 21.389 12.3514 22.6981C12.3514 24.0071 13.4084 25.0682 14.7123 25.0682Z" fill="#6BC1DD"/> -->
+                <!-- <path d="M30.3331 25.0669C31.637 25.0669 32.694 24.0057 32.694 22.6967C32.694 21.3877 31.637 20.3265 30.3331 20.3265C29.0292 20.3265 27.9723 21.3877 27.9723 22.6967C27.9723 24.0057 29.0292 25.0669 30.3331 25.0669Z" fill="#6BC1DD"/> -->
+                <path d="M32.9737 58.3568V48.1405C32.9737 47.496 32.4463 46.9686 31.8018 46.9686H13.1984C12.5539 46.9686 12.0266 47.496 12.0266 48.1405V58.3568H32.9737Z" fill="#135693"/>
+                <path d="M24.6093 58.3567V55.0617C24.6093 54.8683 24.4511 54.7101 24.2578 54.7101H20.7421C20.5489 54.7101 20.3906 54.8683 20.3906 55.0617V58.3567H24.6093Z" fill="#FFC502"/>
+                <path d="M17.578 50.6367H14.8828C14.4115 50.6367 14.0296 50.2549 14.0296 49.7836C14.0296 49.3123 14.4115 48.9304 14.8828 48.9304H17.578C18.0493 48.9304 18.4312 49.3123 18.4312 49.7836C18.4312 50.2547 18.0493 50.6367 17.578 50.6367Z" fill="#C5CCD3"/>
+                <path d="M16.4063 52.718H14.8828C14.4115 52.718 14.0297 52.3362 14.0297 51.8649C14.0297 51.3936 14.4115 51.0117 14.8828 51.0117H16.4063C16.8776 51.0117 17.2595 51.3936 17.2595 51.8649C17.2595 52.3362 16.8775 52.718 16.4063 52.718Z" fill="#C5CCD3"/>
+                <path d="M17.5781 54.8024H14.8828C14.4115 54.8024 14.0297 54.4204 14.0297 53.9492C14.0297 53.4779 14.4115 53.0961 14.8828 53.0961H17.5781C18.0494 53.0961 18.4313 53.4779 18.4313 53.9492C18.4313 54.4205 18.0494 54.8024 17.5781 54.8024Z" fill="#C5CCD3"/>
+                <path d="M16.0547 56.884H14.8828C14.4115 56.884 14.0297 56.5022 14.0297 56.0309C14.0297 55.5597 14.4115 55.1777 14.8828 55.1777H16.0547C16.526 55.1777 16.9079 55.5597 16.9079 56.0309C16.9079 56.5022 16.5259 56.884 16.0547 56.884Z" fill="#C5CCD3"/>
+                <path d="M29.7301 56.0281H27.6498C27.1562 56.0281 26.7562 55.6281 26.7562 55.1344C26.7562 54.6407 27.1563 54.2407 27.6498 54.2407H29.7301C30.2237 54.2407 30.6239 54.6408 30.6239 55.1344C30.6239 55.6282 30.2237 56.0281 29.7301 56.0281Z" fill="#E6E9ED"/>
+                <path d="M28.6906 52.9309C29.7272 52.9309 30.5675 52.0905 30.5675 51.0539C30.5675 50.0173 29.7272 49.177 28.6906 49.177C27.654 49.177 26.8137 50.0173 26.8137 51.0539C26.8137 52.0905 27.654 52.9309 28.6906 52.9309Z" fill="#5DC647"/>
+                <path d="M24.6615 52.0366C24.6615 52.2348 24.4994 52.3968 24.3013 52.3968H20.699C20.5009 52.3968 20.3388 52.2348 20.3388 52.0366V50.0728C20.3388 49.8746 20.5009 49.7125 20.699 49.7125H24.3013C24.4994 49.7125 24.6615 49.8746 24.6615 50.0728V52.0366Z" fill="#6BC1DD"/>
+              </svg>
+  
+              <svg class="antenna" width="45" height="59" viewBox="0 0 45 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="pop1" d="M22.5 6.09642C24.1517 6.09642 25.4906 4.75749 25.4906 3.10583C25.4906 1.45417 24.1517 0.115234 22.5 0.115234C20.8484 0.115234 19.5094 1.45417 19.5094 3.10583C19.5094 4.75749 20.8484 6.09642 22.5 6.09642Z" fill="#6BC1DD"/>
+              </svg>
+  
+              <div class="eyes">
+                <span></span>
+                <span></span>
+              </div>
+            </a>
+            <span class="logo__name">
+              Artificial Intelligence
+            </span>
+          </div>
+          <p class="column-text">
+            Lorem ipsum is placeholder text commonly used in the graphic, print, 
+            and layouts and visual mockups.
+          </p>
+          <div class="contacts">
+            <a href="mailto:Company@gmail.com.com" class="contacts__item contacts__item_mail">
+              Company@gmail.com.com
+            </a>
+            <a href="tel:+38(064) 332-1233" class="contacts__item contacts__item_phone">
+              Phone: (064) 332-1233
+            </a>
+            <span class="contacts__item contacts__item_adress">
+              450 Wall Street, USA, New York
+            </span>
+          </div>
+        </div>
+        <div class="footer-center-wrap">
+          <div class="center-column">
+            <h4 class="column-title">
+              INFORMATION
+            </h4>
+            <nav class="footer-nav">
+              <ul class="footer-nav__item">
+                <li class="footer-nav__list">
+                  <a href="#" class="footer-nav__btn">
+                    New Collection
+                  </a>
+                </li>
+                <li class="footer-nav__list">
+                  <a href="#" class="footer-nav__btn">
+                    About Store
+                  </a>
+                </li>
+                <li class="footer-nav__list">
+                  <a href="#" class="footer-nav__btn">
+                    Terms & Conditions
+                  </a>
+                </li>
+                <li class="footer-nav__list">
+                  <a href="#" class="footer-nav__btn">
+                    Latest News
+                  </a>
+                </li>
+                <li class="footer-nav__list">
+                  <a href="#" class="footer-nav__btn">
+                    Our Sitemap
+                  </a>
+                </li>
+                <li class="footer-nav__list">
+                  <a href="#" class="footer-nav__btn">
+                    Orders History
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="center-column">
+            <h4 class="column-title">
+              FOOTER MENU
+            </h4>
+            <nav class="footer-nav">
+              <ul class="footer-nav__item">
+                <li class="footer-nav__list">
+                  <a href="#" class="footer-nav__btn">
+                    Instagram profile
+                  </a>
+                </li>
+                <li class="footer-nav__list">
+                  <a href="#" class="footer-nav__btn">
+                    New Collection
+                  </a>
+                </li>
+                <li class="footer-nav__list">
+                  <a href="#" class="footer-nav__btn">
+                    Contact Us
+                  </a>
+                </li>
+                <li class="footer-nav__list">
+                  <a href="#" class="footer-nav__btn">
+                    Latest News
+                  </a>
+                </li>
+                <li class="footer-nav__list">
+                  <a href="#" class="footer-nav__btn">
+                    Terms & Conditions
+                  </a>
+                </li>
+                <li class="footer-nav__list">
+                  <a href="#" class="footer-nav__btn">
+                    Purchase Theme
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="center-column">
+            <h4 class="column-title">
+              USEFUL LINKS
+            </h4>
+            <nav class="footer-nav">
+              <ul class="footer-nav__item">
+                <li class="footer-nav__list">
+                  <a href="#" class="footer-nav__btn">
+                    Terms & Conditions
+                  </a>
+                </li>
+                <li class="footer-nav__list">
+                  <a href="#" class="footer-nav__btn">
+                    New Collection
+                  </a>
+                </li>
+                <li class="footer-nav__list">
+                  <a href="#" class="footer-nav__btn">
+                    Orders History
+                  </a>
+                </li>
+                <li class="footer-nav__list">
+                  <a href="#" class="footer-nav__btn">
+                    Latest News
+                  </a>
+                </li>
+                <li class="footer-nav__list">
+                  <a href="#" class="footer-nav__btn">
+                    Instagram profile
+                  </a>
+                </li>
+                <li class="footer-nav__list">
+                  <a href="#" class="footer-nav__btn">
+                    Purchase Theme
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+
+        <div class="last-column">
+          <h4 class="column-title">
+            ABOUT THE STORE
+          </h4>
+          <p class="column-text">
+            Lorem ipsum is placeholder text commonly used in the graphic, print, 
+            and layouts and visual mockups.
+          </p>
+          <a href="#" class="last-column__link">
+            www.company.com
+          </a>
+          <div class="meta-wrap">
+            <a href="#" class="meta-wrap__item meta-wrap__item_facebook">
+              <svg width="10" height="17" viewBox="0 0 10 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.25 1H7C6.00544 1 5.05161 1.39509 4.34835 2.09835C3.64509 2.80161 3.25 3.75544 3.25 4.75V7H1V10H3.25V16H6.25V10H8.5L9.25 7H6.25V4.75C6.25 4.55109 6.32902 4.36032 6.46967 4.21967C6.61032 4.07902 6.80109 4 7 4H9.25V1Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg> 
+            </a>
+            <a href="#" class="meta-wrap__item meta-wrap__item_instagram">
+              <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.5 1H5C2.92893 1 1.25 2.67893 1.25 4.75V12.25C1.25 14.3211 2.92893 16 5 16H12.5C14.5711 16 16.25 14.3211 16.25 12.25V4.75C16.25 2.67893 14.5711 1 12.5 1Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M11.75 8.02736C11.8426 8.65154 11.736 9.28902 11.4453 9.84912C11.1547 10.4092 10.6949 10.8634 10.1312 11.1471C9.5676 11.4308 8.92886 11.5296 8.30586 11.4293C7.68287 11.3291 7.10734 11.0349 6.66115 10.5887C6.21496 10.1425 5.92082 9.56702 5.82058 8.94402C5.72033 8.32102 5.81907 7.68228 6.10277 7.11864C6.38647 6.555 6.84066 6.09517 7.40076 5.80454C7.96086 5.51392 8.59834 5.4073 9.22252 5.49986C9.85922 5.59427 10.4487 5.89096 10.9038 6.34609C11.3589 6.80122 11.6556 7.39067 11.75 8.02736Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M12.875 4.375H12.8825" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>                
+            </a>
+            <a href="#" class="meta-wrap__item meta-wrap__item_twitter">
+              <svg width="21" height="17" viewBox="0 0 21 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19.6409 1.00841C18.8404 1.57307 17.954 2.00495 17.016 2.28741C16.5125 1.70852 15.8434 1.29822 15.0992 1.112C14.3549 0.925781 13.5715 0.972624 12.8547 1.24619C12.138 1.51977 11.5225 2.00686 11.0916 2.64161C10.6607 3.27636 10.4352 4.02813 10.4454 4.79525V5.6312C8.97637 5.6693 7.52068 5.34348 6.20802 4.68277C4.89536 4.02207 3.76647 3.04698 2.9219 1.84435C2.9219 1.84435 -0.421898 9.36789 7.10164 12.7117C5.38003 13.8803 3.32914 14.4663 1.25 14.3836C8.77354 18.5633 17.969 14.3836 17.969 4.77018C17.9682 4.53733 17.9458 4.30505 17.9021 4.07634C18.7553 3.23495 19.3573 2.17264 19.6409 1.00841V1.00841Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>   
+            </a>
+            <a href="#" class="meta-wrap__item meta-wrap__item_inloop">
+              <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11.1409 5.5C12.3343 5.5 13.4789 5.97411 14.3229 6.81802C15.1668 7.66193 15.6409 8.80653 15.6409 10V15.25H12.6409V10C12.6409 9.60218 12.4828 9.22064 12.2015 8.93934C11.9202 8.65804 11.5387 8.5 11.1409 8.5C10.743 8.5 10.3615 8.65804 10.0802 8.93934C9.7989 9.22064 9.64087 9.60218 9.64087 10V15.25H6.64087V10C6.64087 8.80653 7.11498 7.66193 7.95889 6.81802C8.8028 5.97411 9.94739 5.5 11.1409 5.5V5.5Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M3.64087 6.25H0.640869V15.25H3.64087V6.25Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M2.14087 4C2.9693 4 3.64087 3.32843 3.64087 2.5C3.64087 1.67157 2.9693 1 2.14087 1C1.31244 1 0.640869 1.67157 0.640869 2.5C0.640869 3.32843 1.31244 4 2.14087 4Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>  
+            </a>
+            <a href="#" class="meta-wrap__item meta-wrap__item_youtube">
+              <svg width="20" height="15" viewBox="0 0 20 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18.2641 2.9799C18.1669 2.59162 17.9689 2.23586 17.6903 1.94856C17.4116 1.66125 17.062 1.45258 16.6769 1.34362C15.2697 1 9.64087 1 9.64087 1C9.64087 1 4.01207 1 2.60487 1.37634C2.21973 1.48531 1.87016 1.69398 1.59148 1.98128C1.3128 2.26858 1.11487 2.62434 1.01768 3.01262C0.760143 4.44073 0.634167 5.88945 0.641337 7.34058C0.632157 8.80263 0.758141 10.2624 1.01768 11.7013C1.12482 12.0775 1.32719 12.4197 1.60522 12.6949C1.88326 12.97 2.22756 13.1689 2.60487 13.2721C4.01207 13.6484 9.64087 13.6484 9.64087 13.6484C9.64087 13.6484 15.2697 13.6484 16.6769 13.2721C17.062 13.1631 17.4116 12.9545 17.6903 12.6672C17.9689 12.3799 18.1669 12.0241 18.2641 11.6358C18.5196 10.2185 18.6456 8.78078 18.6404 7.34058C18.6496 5.87853 18.5236 4.41876 18.2641 2.9799V2.9799Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M7.80005 10.0157L12.5043 7.34035L7.80005 4.66504V10.0157Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+   </footer>
+   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+   <script src="js/jquery-3.6.0.min.js"></script>
+   <script src="js/main.js"></script>
+
+
+</body>
+</html>
